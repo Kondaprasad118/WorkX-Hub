@@ -1,0 +1,77 @@
+{
+    "id": "usr_...",
+    "email": "homeowner@example.com",
+    "password": "hashed_password",
+    "role": "homeowner | worker | admin",
+    "name": "Jane Doe",
+    "phone": "+1 234-567-8900",
+    "address": "123 Maple St, Seattle, WA",
+    "createdAt": "2026-06-15T12:00:00Z"
+}
+2. workers (Worker Metadata)
+json
+
+{
+    "userId": "usr_...",
+    "category": "Plumber | Electrician | Carpenter | Painter | Driver | AC Technician | Appliance Repair | House Cleaner | Gardener | Pest Control",
+    "experience": 8,
+    "hourlyRate": 45,
+    "bio": "Experienced local plumber specializing in leak repair and installations.",
+    "skills": [
+        "Pipe fitting",
+        "Water heater repair",
+        "Clog clearing"
+    ],
+    "rating": 4.8,
+    "reviewsCount": 12,
+    "availability": "available | busy | offline",
+    "profileImage": "/assets/profiles/plumber_1.jpg",
+    "verificationStatus": "verified | pending | rejected"
+}
+3. bookings
+json
+
+{
+    "id": "bk_...",
+    "homeownerId": "usr_1",
+    "workerId": "usr_2",
+    "category": "Plumber",
+    "date": "2026-06-20",
+    "time": "10:00 AM",
+    "address": "123 Maple St, Seattle, WA",
+    "description": "Fixing kitchen sink pipe leak",
+    "status": "pending | accepted | rejected | completed | cancelled",
+    "paymentStatus": "unpaid | paid",
+    "paymentAmount": 90.00,
+    "paymentId": "pay_...",
+    "rating": 5,
+    "review": "Fast and clean work! Highly recommended.",
+    "createdAt": "2026-06-15T12:04:14Z"
+}
+4. blogs
+json
+
+{
+    "id": "blog_...",
+    "title": "5 Signs Your Home Needs a Professional Electrician",
+    "slug": "signs-home-needs-electrician",
+    "excerpt": "Ignoring electrical issues can be dangerous. Here is when to call a certified electrician.",
+    "content": "Full markdown or HTML text...",
+    "author": "WorkX Hub Editorial",
+    "category": "Electrical",
+    "readTime": "4 min read",
+    "image": "/assets/blogs/electrician_blog.jpg",
+    "createdAt": "2026-06-10T08:00:00Z"
+}
+5. contacts (Feedback and Queries)
+json
+
+{
+    "id": "ct_...",
+    "name": "Alex Johnson",
+    "email": "alex@example.com",
+    "subject": "Partnership Inquiry",
+    "message": "Hi, I have a fleet of AC technicians. How can I register them?",
+    "status": "unread | read",
+    "createdAt": "2026-06-15T10:00:00Z"
+}
